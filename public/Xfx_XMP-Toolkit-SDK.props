@@ -1,0 +1,14 @@
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <ItemDefinitionGroup>
+    <ClCompile>
+	<AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)..\..\lib\native\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>	  <AdditionalLibraryDirectories>$(MSBuildThisFileDirectory)..\..\lib\native\lib\$(Platform);$(MSBuildThisFileDirectory)..\..\lib\native\lib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>$(CopyDLL)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+</Project>

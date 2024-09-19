@@ -1,0 +1,5 @@
+XMPFiles/build
+XMPCore/build
+third-party/zlib
+third-party/expat
+public/libraries/win*

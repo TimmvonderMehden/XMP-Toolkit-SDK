@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+    <metadata>
+        <id>Xfx_XMP-Toolkit-SDK</id>
+        <version>2022.6.0</version>
+        <authors>Xfx Autonuget</authors>
+        <owners>https://github.com/adobe/XMP-Toolkit-SDK.git </owners>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>commit e4d0c858dd04a6d3074a125bcf0c6176cfb96cfd</description>
+        <releaseNotes>build by Xfx/Jenkins/VS2022</releaseNotes>
+        <copyright>Copyright 2017-2023</copyright>
+        <tags>native</tags>
+	<dependencies>
+            <group targetFramework="native"></group>
+        </dependencies>
+    </metadata>	<files>
+		<file src="include\**" target="lib\native\include\" />
+		<file src="libraries\windows_x64\**" target="lib\native\lib\x64"/>
+		<file src="*.props" target="build\native"/>
+	</files>
+</package>
